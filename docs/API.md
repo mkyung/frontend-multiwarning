@@ -34,4 +34,19 @@
 		- Validate the form using ajax		- Execute callbacks			- On Validation Passes			- On Validation Ends
 
 				1. `.clone({options})`		
-		Clone the multiwarning instance with *new options* overwriting the old options
+		Clone the multiwarning instance with *new options* overwriting the old options
+		
+1. **Endpoint return format**
+
+	~~~json
+	[{
+		"errorMessage": "...",
+		"xPath": "",
+		"errorType": "",
+		"errorCode": "MSG_100000306",
+		"errorLevel": "W"
+	 },{
+	 	...
+	}]
+	~~~
+

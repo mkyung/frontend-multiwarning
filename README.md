@@ -63,4 +63,9 @@ It is a module written for the eBao Life System to provide:
 
 ### [API references][API ref]
 
+### Changelog (v0.2.0, 21/10/2016)
+
+1. New endpoint made compatitable with updated vRules. The new vRules now supports a generic `ValidationResult` object that contains information of the validation result, such as `errorLevel`. The endpoint will accept the same parameters but returns an **array of Javascript literals**. Refer to [API references][API ref] for returned data.
+2. Frontend Multiwarning now supports the `continue` function. If results returned are all at **warning** level a `continue` button will appear and allows users to call the `onValidationPass` function directly.
+
 [API ref]: ./docs/API.md
