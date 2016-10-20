@@ -2,9 +2,9 @@
 
 ### Frontend
 
-1. `Multiwarning.version`	
+1. **Multiwarning.version**	
 	Returns the semantic version number
-	1. `new Multiwarning({options})`
+	1. **new Multiwarning({options})**
 	1. `options.scrollToTop (boolean, default=true)`		Scroll the page to top when validation finishes
 			1. `options.disableCaller (boolean, default=true)`		Disable the caller HTML button when validation in progress
 			1. `options.disabledCallerText (string, default=“Validating”)`
@@ -26,4 +26,12 @@
 			1. `options.page (jQuery object, default=...)`
 		A jQuery object on the page to which the Multiwarning container attach to
 	1. `options.containerSelector (string, default=“#warning-container”)`
-		A CSS selector to the sub-container for warnings to append in the template
+		A CSS selector to the sub-container for warnings to append in the template	1. `options.template (jQuery object, default=...)`
+		Template to display warnings
+		1. **new Multiwarning()**
+	1. `.validate(caller context)`
+		- Disable the caller if “this” supplied
+		- Validate the form using ajax		- Execute callbacks			- On Validation Passes			- On Validation Ends
+
+				1. `.clone({options})`		
+		Clone the multiwarning instance with *new options* overwriting the old options
